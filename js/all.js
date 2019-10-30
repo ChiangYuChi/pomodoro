@@ -30,10 +30,13 @@ const progressBar = new ProgressBar.Circle(".pomodoro-timer", {
             color: 'white',
 
             position: 'absolute',
-            left: '31%',
+            left: '30.5%',
             top: '40%',
-            padding: 0,
+            padding: 20,
+            letterspacing: 13,
             margin: 0,
+
+
         }
     },
     trailColor: "grey",
