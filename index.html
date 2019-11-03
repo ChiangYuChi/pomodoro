@@ -1,89 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Muli:200,400&display=swap" rel="stylesheet">
+    <title>Pomodoro</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:200,400&display=swap"
+      rel="stylesheet"
+    />
 
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="pomodoro-container">
-
-        <div id="pomodoro-clock">
-
-
-            <div id="pomodoro-main">
-                <div class="pomodoro-timer"></div>
-
-            </div>
-
-            <img src="./img/tomato.png" class="tomato-icon">
-
-            <h1>POMODORO</h1>
+      <div id="pomodoro-clock">
+        <div id="pomodoro-main">
+          <div class="pomodoro-timer"></div>
         </div>
 
-        <div id="pomodoro-info">
-            <div id="pomodoro-clock-controller">
+        <img src="./img/tomato.png" class="tomato-icon" />
 
-                <button id="pomodoro-start">
-                    <i class="fas fa-play" id="play-icon"></i>
-                    <i class="fas fa-pause hidden" id="pause-icon"></i>
-                </button>
-                <button id="pomodoro-stop" class="hidden">
-                    <i class="fas fa-stop"></i>
-                </button>
+        <h1>POMODORO</h1>
+      </div>
 
-            </div>
-
-
-
-            <div id="pomodoro-clock-actions">
-
-                <div class="duration">
-                    <h3>DURATION</h3>
-                    <div class="pomodoro-input">
-
-                        <label>Work</label>
-                        <input name="input-work-duration" id="input-work-duration" type="number" />
-                    </div>
-                    <div class="pomodoro-input">
-                        <label>Break</label>
-                        <input name="input-break-duration" id="input-break-duration" type="number" />
-                    </div>
-                </div>
-
-
-                <div class="task">
-                    <h3>ADD NEW TASK</h3>
-                    <input type="text" id="pomodoro-clock-task" placeholder="Enter your task..." />
-
-                    <h3>SESSIONS</h3>
-                    <ul id="pomodoro-sessions">
-
-
-                    </ul>
-                </div>
-
-
-
-            </div>
-
-
-
-
-
+      <div id="pomodoro-info">
+        <div id="pomodoro-clock-controller">
+          <button id="pomodoro-start">
+            <i class="fas fa-play" id="play-icon"></i>
+            <i class="fas fa-pause hidden" id="pause-icon"></i>
+          </button>
+          <button id="pomodoro-stop" class="hidden">
+            <i class="fas fa-stop"></i>
+          </button>
         </div>
 
+        <div id="pomodoro-clock-actions">
+          <div class="duration">
+            <h3>DURATION</h3>
+            <div class="pomodoro-input">
+              <label>Work</label>
+              <input
+                name="input-work-duration"
+                id="input-work-duration"
+                type="number"
+              />
+            </div>
+            <div class="pomodoro-input">
+              <label>Break</label>
+              <input
+                name="input-break-duration"
+                id="input-break-duration"
+                type="number"
+              />
+            </div>
+          </div>
+
+          <div class="task">
+            <h3>ADD NEW TASK</h3>
+            <input
+              type="text"
+              id="pomodoro-clock-task"
+              placeholder="Enter your task..."
+            />
+
+            <h3>SESSIONS</h3>
+            <ul id="pomodoro-sessions"></ul>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./js/progressBar.js"></script>
     <script src="./js/all.js"></script>
-</body>
-
+  </body>
 </html>
